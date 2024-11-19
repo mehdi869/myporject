@@ -1,7 +1,10 @@
-let fullname = "mehdi";
-let age = 19;
-let student = true;
+const pi = 3.14159;
+let radius;
+let circumference;
 
-document.getElementById("p1").textContent = "your name is " + fullname;
-document.getElementById("p2").textContent = "you are" + age + "years old";
-document.getElementById("p3").textContent = "Enrolled:" + student;
+document.getElementById("mySubmit").onclick = function () {
+  radius = document.getElementById("mytext").value;
+  radius = Number(radius);
+  circumference = 2 * pi * radius;
+  document.getElementById("myh3").textContent = circumference + "cm";
+};
